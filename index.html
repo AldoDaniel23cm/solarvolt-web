@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0A1F44" />
+
+  <!-- ══════════ EDITA ESTO ══════════ -->
+  <title>SolarVolt · Energía Solar, Seguridad y Electricidad</title>
+  <meta name="description" content="Instalación profesional de paneles solares, cámaras de seguridad, puntos de venta y mantenimiento de inversores. Energía confiable para tu hogar y negocio." />
+  <!-- ═════════════════════════════════ -->
+
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════
+       NAVBAR — sin menús desplegables, links directos
+       ════════════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__logo" aria-label="Inicio">
+        <!-- FOTO: tu logo (SVG o PNG transparente). Altura recomendada 38px -->
+        <img src="assets/img/logo.svg" alt="SolarVolt" />
+      </a>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto" class="btn btn--primary btn--sm">Cotizar gratis</a>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════════
+       HERO
+       FOTO 1: assets/img/hero.jpg
+       Sugerencia: paneles solares en techo al atardecer,
+       ángulo amplio, tonos dorados. 1920x1080 mínimo.
+       ════════════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg" style="background-image: url('assets/img/hero.jpg');"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <span class="hero__badge" data-animate>
+        <span class="dot"></span> Instalación certificada · Garantía por escrito
+      </span>
+
+      <h1 class="hero__title" data-animate>
+        Energía que trabaja <span class="accent">todos los días</span> para ti
+      </h1>
+
+      <p class="hero__subtitle" data-animate>
+        Paneles solares, cámaras de seguridad, puntos de venta y mantenimiento eléctrico.
+        Instalaciones profesionales para hogares y negocios, respaldadas por técnicos certificados.
+      </p>
+
+      <div class="hero__actions" data-animate>
+        <a href="#contacto" class="btn btn--primary btn--lg">
+          Solicitar cotización
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#servicios" class="btn btn--ghost btn--lg">Ver servicios</a>
+      </div>
+
+      <div class="hero__stats" data-animate>
+        <div><strong>+500</strong><span>Instalaciones realizadas</span></div>
+        <div><strong>10 años</strong><span>De garantía</span></div>
+        <div><strong>24/7</strong><span>Soporte técnico</span></div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Desliza</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       BARRA DE CONFIANZA — logos o sellos
+       ════════════════════════════════════════════════ -->
+  <section class="trust-bar">
+    <div class="container">
+      <p class="trust-bar__title">Respaldados por las mejores marcas</p>
+      <div class="trust-bar__logos">
+        <span>Enphase</span>
+        <span>Huawei</span>
+        <span>Growatt</span>
+        <span>Dahua</span>
+        <span>Schneider</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       SERVICIOS
+       ════════════════════════════════════════════════ -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section__head" data-animate>
+        <span class="eyebrow">Servicios</span>
+        <h2>Soluciones integrales en energía y seguridad</h2>
+        <p>Un solo proveedor para todo lo eléctrico y tecnológico de tu hogar o negocio.</p>
+      </div>
+
+      <div class="grid grid--services">
+
+        <!-- ───── SERVICIO 1 ─────
+             FOTO 3: assets/img/service-solar.jpg
+             Paneles solares instalados en techo. 800x600. -->
+        <article class="card" data-animate>
+          <div class="card__img" style="background-image: url('assets/img/service-solar.jpg');"></div>
+          <div class="card__body">
+            <h3>Paneles Solares</h3>
+            <p>Diseño e instalación de sistemas fotovoltaicos con ahorro real desde el primer mes.</p>
+            <ul class="card__list">
+              <li>Sistemas on-grid, off-grid e híbridos</li>
+              <li>Estudio de consumo sin costo</li>
+              <li>Monitoreo desde tu celular</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ───── SERVICIO 2 ─────
+             FOTO 4: assets/img/service-pos.jpg
+             Terminal POS en mostrador. 800x600. -->
+        <article class="card" data-animate>
+          <div class="card__img" style="background-image: url('assets/img/service-pos.jpg');"></div>
+          <div class="card__body">
+            <h3>Puntos de Venta</h3>
+            <p>Instalación y configuración de terminales POS para comercios, restaurantes y servicios.</p>
+            <ul class="card__list">
+              <li>Integración con tu sistema actual</li>
+              <li>Capacitación al personal</li>
+              <li>Soporte post-venta incluido</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ───── SERVICIO 3 ─────
+             FOTO 5: assets/img/service-camaras.jpg
+             Cámara de seguridad instalada. 800x600. -->
+        <article class="card" data-animate>
+          <div class="card__img" style="background-image: url('assets/img/service-camaras.jpg');"></div>
+          <div class="card__body">
+            <h3>Cámaras de Seguridad</h3>
+            <p>Vigilancia 24/7 con acceso remoto desde tu celular, estés donde estés.</p>
+            <ul class="card__list">
+              <li>Cámaras HD / 4K de alta gama</li>
+              <li>Monitoreo desde el móvil</li>
+              <li>Almacenamiento local o en la nube</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ───── SERVICIO 4 ─────
+             FOTO 6: assets/img/service-inversores.jpg
+             Inversor solar montado en pared. 800x600. -->
+        <article class="card" data-animate>
+          <div class="card__img" style="background-image: url('assets/img/service-inversores.jpg');"></div>
+          <div class="card__body">
+            <h3>Mantenimiento de Inversores</h3>
+            <p>Diagnóstico, limpieza y reparación para extender la vida útil de tu sistema solar.</p>
+            <ul class="card__list">
+              <li>Revisión eléctrica completa</li>
+              <li>Repuestos originales</li>
+              <li>Informe técnico detallado</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ───── SERVICIO 5 ─────
+             FOTO 7: assets/img/service-electricas.jpg
+             Tablero eléctrico o electricista trabajando. 800x600. -->
+        <article class="card" data-animate>
+          <div class="card__img" style="background-image: url('assets/img/service-electricas.jpg');"></div>
+          <div class="card__body">
+            <h3>Instalaciones Eléctricas</h3>
+            <p>Instalaciones residenciales y comerciales bajo norma, seguras y certificadas.</p>
+            <ul class="card__list">
+              <li>Tableros y acometidas</li>
+              <li>Puesta a tierra y pararrayos</li>
+              <li>Corrección de fallas eléctricas</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ───── SERVICIO 6 · Extra ─────
+             Aprovechamos para poner una card con CTA.
+             Sin foto, solo color corporativo. -->
+        <article class="card card--cta" data-animate>
+          <div class="card__body">
+            <span class="eyebrow">¿Otro servicio?</span>
+            <h3>Cuéntanos qué necesitas</h3>
+            <p>Hacemos proyectos a medida. Escríbenos y te asesoramos sin costo.</p>
+            <a href="#contacto" class="btn btn--primary">Hablar con un asesor</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       PROYECTOS / GALERÍA
+       FOTOS 8-13: assets/img/project-1.jpg ... project-6.jpg
+       Todas cuadradas 800x800. Mezcla de tus trabajos reales.
+       ════════════════════════════════════════════════ -->
+  <section class="section section--dark" id="proyectos">
+    <div class="container">
+      <div class="section__head section__head--light" data-animate>
+        <span class="eyebrow">Proyectos recientes</span>
+        <h2>Trabajo real, resultados reales</h2>
+        <p>Algunas de las instalaciones que hemos realizado en los últimos meses.</p>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery__item" style="background-image: url('assets/img/project-1.jpg');" data-animate>
+          <div class="gallery__overlay"><span>Residencial · Paneles solares</span></div>
+        </div>
+        <div class="gallery__item" style="background-image: url('assets/img/project-2.jpg');" data-animate>
+          <div class="gallery__overlay"><span>Comercio · Cámaras de seguridad</span></div>
+        </div>
+        <div class="gallery__item" style="background-image: url('assets/img/project-3.jpg');" data-animate>
+          <div class="gallery__overlay"><span>Restaurante · Punto de venta</span></div>
+        </div>
+        <div class="gallery__item" style="background-image: url('assets/img/project-4.jpg');" data-animate>
+          <div class="gallery__overlay"><span>Industria · Mantenimiento inversores</span></div>
+        </div>
+        <div class="gallery__item" style="background-image: url('assets/img/project-5.jpg');" data-animate>
+          <div class="gallery__overlay"><span>Residencial · Instalación eléctrica</span></div>
+        </div>
+        <div class="gallery__item" style="background-image: url('assets/img/project-6.jpg');" data-animate>
+          <div class="gallery__overlay"><span>Oficina · Cableado estructurado</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       NOSOTROS
+       FOTO 14: assets/img/about.jpg
+       Tu equipo trabajando con uniforme, camioneta, etc.
+       Vertical 900x1100. Genera confianza real.
+       ════════════════════════════════════════════════ -->
+  <section class="section" id="nosotros">
+    <div class="container split">
+      <div class="split__media" data-animate>
+        <img src="assets/img/about.jpg" alt="Equipo de SolarVolt en trabajo de campo" />
+        <div class="split__badge">
+          <strong>+10</strong>
+          <span>Años de experiencia</span>
+        </div>
+      </div>
+
+      <div class="split__text" data-animate>
+        <span class="eyebrow">Por qué elegirnos</span>
+        <h2>Técnicos certificados. Trabajo garantizado.</h2>
+        <p>
+          Llevamos más de una década instalando sistemas de energía y seguridad en hogares
+          y comercios. No vendemos equipos: entregamos soluciones que funcionan y duran.
+        </p>
+
+        <div class="features">
+          <div class="feature">
+            <span class="feature__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Garantía por escrito en cada instalación
+          </div>
+          <div class="feature">
+            <span class="feature__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Materiales de marcas reconocidas
+          </div>
+          <div class="feature">
+            <span class="feature__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Presupuesto sin compromiso en menos de 24h
+          </div>
+          <div class="feature">
+            <span class="feature__icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            Soporte técnico post-venta permanente
+          </div>
+        </div>
+
+        <a href="#contacto" class="btn btn--primary">Agendar visita técnica</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       PROCESO
+       ════════════════════════════════════════════════ -->
+  <section class="section section--alt" id="proceso">
+    <div class="container">
+      <div class="section__head" data-animate>
+        <span class="eyebrow">Cómo trabajamos</span>
+        <h2>Cuatro pasos simples, cero complicaciones</h2>
+        <p>Un proceso claro y transparente desde el primer contacto hasta el soporte final.</p>
+      </div>
+
+      <div class="grid grid--steps">
+        <div class="step" data-animate>
+          <span class="step__num">01</span>
+          <h3>Contacto</h3>
+          <p>Nos cuentas qué necesitas por WhatsApp o formulario. Respuesta el mismo día.</p>
+        </div>
+        <div class="step" data-animate>
+          <span class="step__num">02</span>
+          <h3>Visita técnica</h3>
+          <p>Evaluamos el sitio, medimos y te enviamos una propuesta clara y detallada.</p>
+        </div>
+        <div class="step" data-animate>
+          <span class="step__num">03</span>
+          <h3>Instalación</h3>
+          <p>Ejecutamos el trabajo con materiales de primera y limpieza total del área.</p>
+        </div>
+        <div class="step" data-animate>
+          <span class="step__num">04</span>
+          <h3>Soporte</h3>
+          <p>Te acompañamos después con mantenimiento programado y garantía activa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       TESTIMONIOS
+       ════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head" data-animate>
+        <span class="eyebrow">Testimonios</span>
+        <h2>Lo que dicen nuestros clientes</h2>
+      </div>
+
+      <div class="grid grid--testimonials">
+        <div class="testimonial" data-animate>
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            "Instalaron paneles solares en mi casa y en el primer mes ya vi el ahorro.
+            Trabajo limpio, rápido y muy profesional."
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">MR</div>
+            <div>
+              <strong>María Rodríguez</strong>
+              <span>Residencial · 8 paneles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial" data-animate>
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            "Pusieron cámaras y punto de venta en mi restaurante. Todo quedó funcionando
+            el mismo día y me capacitaron al personal."
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">JC</div>
+            <div>
+              <strong>Jorge Castillo</strong>
+              <span>Comercio · Cámaras + POS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial" data-animate>
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            "Mi inversor tenía fallas y en un día lo dejaron funcionando como nuevo.
+            Explican todo con claridad, sin tecnicismos."
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">AL</div>
+            <div>
+              <strong>Ana López</strong>
+              <span>Mantenimiento de inversor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       CTA FINAL
+       ════════════════════════════════════════════════ -->
+  <section class="cta">
+    <div class="container cta__inner" data-animate>
+      <div>
+        <h2>¿Listo para bajar tu factura de luz?</h2>
+        <p>Cotización sin costo en menos de 24 horas. Sin compromiso.</p>
+      </div>
+      <a href="#contacto" class="btn btn--primary btn--lg">
+        Solicitar cotización
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       CONTACTO
+       ════════════════════════════════════════════════ -->
+  <section class="section section--alt" id="contacto">
+    <div class="container split split--contact">
+
+      <div data-animate>
+        <span class="eyebrow">Contacto</span>
+        <h2>Hablemos de tu proyecto</h2>
+        <p>Escríbenos y un asesor te responde el mismo día.</p>
+
+        <ul class="contact-list">
+          <li>
+            <strong>Teléfono / WhatsApp</strong>
+            <!-- EDITA: tu número real -->
+            <a href="tel:+1234567890">+1 234 567 890</a>
+          </li>
+          <li>
+            <strong>Email</strong>
+            <!-- EDITA: tu correo real -->
+            <a href="mailto:contacto@tudominio.com">contacto@tudominio.com</a>
+          </li>
+          <li>
+            <strong>Dirección</strong>
+            <!-- EDITA: tu dirección real -->
+            Tu ciudad, tu país
+          </li>
+          <li>
+            <strong>Horario</strong>
+            Lunes a Sábado · 8:00 am – 6:00 pm
+          </li>
+        </ul>
+      </div>
+
+      <!-- ══════════════════════════════════════════
+           FORMULARIO — funciona con Formspree (gratis)
+           1. Crea cuenta en https://formspree.io
+           2. Crea un "New Form"
+           3. Copia tu ID (algo como xpzgkqwe)
+           4. Reemplaza TU_ID_FORMSPREE aquí abajo
+           ══════════════════════════════════════════ -->
+      <form class="form" action="https://formspree.io/f/TU_ID_FORMSPREE" method="POST" data-animate>
+        <div class="form__row">
+          <label>
+            Nombre
+            <input type="text" name="nombre" required />
+          </label>
+          <label>
+            Teléfono
+            <input type="tel" name="telefono" required />
+          </label>
+        </div>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Servicio de interés
+          <select name="servicio">
+            <option>Paneles solares</option>
+            <option>Puntos de venta</option>
+            <option>Cámaras de seguridad</option>
+            <option>Mantenimiento de inversores</option>
+            <option>Instalaciones eléctricas</option>
+            <option>Otro</option>
+          </select>
+        </label>
+        <label>
+          Cuéntanos tu proyecto
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--lg">Enviar mensaje</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/img/logo.svg" alt="SolarVolt" class="footer__logo" />
+        <p>Energía y seguridad para tu hogar y negocio.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <a href="#servicios">Paneles solares</a>
+        <a href="#servicios">Cámaras de seguridad</a>
+        <a href="#servicios">Puntos de venta</a>
+        <a href="#servicios">Instalaciones eléctricas</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <!-- EDITA con tus datos reales -->
+        <a href="tel:+1234567890">+1 234 567 890</a>
+        <a href="mailto:contacto@tudominio.com">contacto@tudominio.com</a>
+        <span>Tu ciudad, tu país</span>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© <span id="year"></span> SolarVolt. Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════
+       BOTÓN FLOTANTE WHATSAPP
+       EDITA: reemplaza 1234567890 por tu número
+       con código de país, SIN + ni espacios.
+       Ejemplo Argentina: 5491123456789
+       ════════════════════════════════════════════════ -->
+  <a href="https://wa.me/1234567890?text=Hola,%20quiero%20una%20cotizaci%C3%B3n"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener"
+     aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+      <path d="M20.52 3.48A11.87 11.87 0 0 0 12 0C5.37 0 0 5.37 0 12a11.9 11.9 0 0 0 1.64 6L0 24l6.17-1.62A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.24-6.22-3.48-8.52ZM12 21.8a9.8 9.8 0 0 1-5-1.36l-.36-.22-3.66.96.98-3.57-.24-.37A9.8 9.8 0 1 1 21.8 12c0 5.4-4.4 9.8-9.8 9.8Zm5.6-7.34c-.3-.15-1.8-.9-2.08-1s-.48-.15-.68.15-.78 1-.96 1.2-.36.22-.66.07a8.06 8.06 0 0 1-2.36-1.45 8.9 8.9 0 0 1-1.63-2.03c-.17-.3 0-.46.13-.6s.3-.36.45-.54a2 2 0 0 0 .3-.5.55.55 0 0 0 0-.52c-.08-.14-.68-1.64-.94-2.24s-.5-.5-.68-.5h-.58a1.1 1.1 0 0 0-.8.37 3.36 3.36 0 0 0-1.04 2.5 5.85 5.85 0 0 0 1.22 3.1c.15.2 2.1 3.2 5.1 4.5a17 17 0 0 0 1.7.63 4.1 4.1 0 0 0 1.88.12 3.07 3.07 0 0 0 2-1.42 2.5 2.5 0 0 0 .18-1.42c-.08-.13-.28-.2-.58-.35Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
