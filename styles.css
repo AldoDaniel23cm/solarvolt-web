@@ -1,10 +1,10 @@
 /* ════════════════════════════════════════════════════
-   VARIABLES DE MARCA — cambia aquí los colores globales
+   VARIABLES DE MARCA
    ════════════════════════════════════════════════════ */
 :root {
-  --brand:      #0A1F44;   /* Azul profundo principal */
-  --brand-2:    #12305E;   /* Azul secundario */
-  --accent:     #F5A623;   /* Ámbar solar (acento) */
+  --brand:      #0A1F44;
+  --brand-2:    #12305E;
+  --accent:     #F5A623;
   --accent-2:   #FFC857;
   --text:       #0F172A;
   --text-muted: #64748B;
@@ -50,8 +50,7 @@ input, select, textarea { font-family: inherit; }
 .section { padding: 110px 0; }
 .section--alt { background: var(--bg-alt); }
 .section--dark { background: var(--brand); color: #fff; }
-.section--dark .section__head h2,
-.section--dark .section__head p { color: #fff; }
+.section--dark .section__head h2 { color: #fff; }
 .section--dark .section__head p { color: rgba(255,255,255,.7); }
 
 .section__head {
@@ -138,7 +137,23 @@ input, select, textarea { font-family: inherit; }
   padding: 12px 0;
 }
 .navbar__inner { display: flex; align-items: center; justify-content: space-between; }
+
 .navbar__logo img { height: 38px; width: auto; }
+
+/* Logo de texto (fallback cuando no hay logo.svg) */
+.logo-text {
+  font-family: 'Manrope', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color .3s;
+}
+.logo-text .icon { color: var(--accent); font-size: 20px; }
+.navbar.is-scrolled .logo-text { color: var(--brand); }
 
 .navbar__nav { display: flex; align-items: center; gap: 34px; }
 .navbar__nav a {
@@ -189,10 +204,12 @@ input, select, textarea { font-family: inherit; }
   overflow: hidden;
 }
 .hero__bg {
-  position: absolute; inset: 0;
+  position: absolute;
+  inset: 0;
+  background-color: var(--brand);
   background-size: cover;
   background-position: center;
-  background-color: var(--brand);
+  background-repeat: no-repeat;
   transform: scale(1.03);
   animation: heroZoom 20s ease-out infinite alternate;
 }
@@ -360,19 +377,15 @@ input, select, textarea { font-family: inherit; }
   border-color: transparent;
 }
 
+/* ✅ FOTO DE TARJETA — CORREGIDO (ya no se repite en mosaico) */
 .card__img {
   height: 220px;
+  width: 100%;
+  background-color: #E8EDF4;
   background-size: cover;
   background-position: center;
-  background-color: #E2E8F0;
-  background-image: linear-gradient(135deg, #CBD5E1 25%, #E2E8F0 25%, #E2E8F0 50%, #CBD5E1 50%, #CBD5E1 75%, #E2E8F0 75%);
-  background-size: 20px 20px, cover;
-  background-position: center, center;
-  background-blend-mode: overlay;
+  background-repeat: no-repeat;
   transition: transform .5s var(--ease);
-}
-.card__img[style*="url"] {
-  background-image: var(--card-img, none), linear-gradient(135deg, #CBD5E1 25%, #E2E8F0 25%, #E2E8F0 50%, #CBD5E1 50%, #CBD5E1 75%, #E2E8F0 75%);
 }
 
 .card__body {
@@ -433,9 +446,10 @@ input, select, textarea { font-family: inherit; }
 }
 .gallery__item {
   aspect-ratio: 1 / 1;
+  background-color: var(--brand-2);
   background-size: cover;
   background-position: center;
-  background-color: var(--brand-2);
+  background-repeat: no-repeat;
   border-radius: var(--radius-sm);
   overflow: hidden;
   position: relative;
@@ -480,6 +494,7 @@ input, select, textarea { font-family: inherit; }
   width: 100%;
   height: 560px;
   object-fit: cover;
+  background-color: #E8EDF4;
 }
 .split__badge {
   position: absolute;
@@ -734,11 +749,24 @@ input, select, textarea { font-family: inherit; }
   gap: 50px;
   padding-bottom: 60px;
 }
+
+/* Logo del footer: si hay imagen, se muestra; si no, cae al texto */
 .footer__logo {
   height: 38px;
   margin-bottom: 18px;
   filter: brightness(0) invert(1);
 }
+.footer__logo-text {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer__logo-text .icon { color: var(--accent); }
 .footer__brand p { font-size: 14.5px; max-width: 260px; line-height: 1.6; }
 
 .footer__col h4 {
